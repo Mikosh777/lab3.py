@@ -26,11 +26,19 @@ while True:
         break
     else:
         print('This is wrong number')
-        # 5. Сумма цифр числа (строковые операции).
-# //                Попросите пользователя ввести число, затем найдите и выведите сумму его цифр.
 
+#Task 4
+str1 = input("Enter string for 4th task: ")
+count = 0
 
-sum_of_digits = input("Введите число: ")
+for char in str1:
+    if char == 'a':
+        count += 1
+
+print(count)
+
+#Task 5.
+sum_of_digits = input("enter your number for 5th task: ")
 sum = 0
 
 for i in range(len(sum_of_digits)):
@@ -41,16 +49,12 @@ for i in range(len(sum_of_digits)):
 
 print(sum)
 
-# //        6. Числа Фибоначчи (пока). Напишите программу для печати первых N чисел Фибоначчи,
-# //                где N - положительное целое число, введенное пользователем. Используйте цикл while.
-
-fibonacci = int(input("Введите количество членов последовательности Фибоначчи: "))
+#Task 6. 
+fibonacci = int(input("enter your number for Fibbonacci: "))
 sum = 0
 i = 0
 f1 = 0
 f2 = 1
-print(f1)
-print(f2)
 
 while i < fibonacci - 2:
     i += 1
@@ -59,10 +63,9 @@ while i < fibonacci - 2:
     f2 = sum
     print(sum)
 
-# 7. Переверните строку (операции со строками). Попросите пользователя ввести str.
-# //        вводим, а затем выводим его в обратном порядке.
+#Task 7. 
 
-str2 = input("Введите строку: ")
+str2 = input("Enter string for 7th task : ")
 sum_str = ""
 
 for i in range(len(str2) - 1, -1, -1):
@@ -70,82 +73,66 @@ for i in range(len(str2) - 1, -1, -1):
 
 print(sum_str)
 
-# //        8. Пропустите четные (продолжайте).
-# //                Напишите программу, которая предложит пользователю ввести цифры, и если введенное число четное,
-# //        оно будет пропущено с помощью конструкции continue. Программа должна вывести сумму всех нечетных чисел.
-
+#Task 8.
 sum = 0
 
 while True:
-    numberrr = int(input("write a numberrr"))
+    number8 = int(input("enter your number for 8th task"))
 
-    if numberrr == 0:
+    if number8 == 0:
         break
-    if numberrr % 2 == 0:
+    if number8 % 2 == 0:
         continue
 
-    sum += numberrr
+    sum += number8
 
 print(sum)
 
 
-# 9. Угадайте число (перерыв). Напишите игру, в которой компьютер выбирает случайное число от 1 до 100,
-# //            а пользователь должен угадать это число.
-# //                Программа должна отображать подсказки ("Слишком маленький" или "Слишком большой") и завершать работу,
-# //                когда пользователь угадает число. Используйте конструкцию break, чтобы завершить игру.
+#Task 9. 
 
 
-randnum = random.randint(1,100)
-print(randnum)
+rand_num = random.randint(1,100)
+print(rand_num)
 
 while True:
     numwin = int(input("write a num \n"))
-    if randnum > numwin:
-        print("число больше чем это")
-    if randnum < numwin:
-        print("число меньше чем это")
-    if randnum == numwin:
-        print("winnn!!!")
+    if rand_num > numwin:
+        print("num is more than this")
+    if rand_num < numwin:
+        print("num is less than this")
+    if rand_num == numwin:
+        print("You are Winner!!!")
         break
 
 
-# //        10. Палиндром (строковые операции). Попросите пользователя ввести строку и определить,
-# //                является ли она палиндромом (читайте то же самое справа налево, что и слева направо).
-
-str222 = input("Введите строку: ")
+#Task10. 
+str222 = input("Enter string fpr 10th task: ")
 pal = ""
 
 for i in range(len(str222) - 1, -1, -1):
     pal += str222[i]
 
 if pal == str222:
-    print("Палиндром")
+    print("Palindrom")
 else:
-    print("Не палиндром")
+    print("Not polindrom")
 
 
-# //        11. Пронумеруйте до степени (пока). Напишите программу,
-# //            которая предлагает пользователю ввести число X и степень Y.
-# //        Затем вычислите и выведите X в степени Y, используя цикл while.
+#Task 11. 
 
-x = int(input("Введите число \n"))
-y = int(input("Введите степень \n"))
-i = 1;
-summm = 1;
+x = int(input("Enter x: "))
+y = int(input("Enter power(y): "))
+i = 1
+sum11 = 1
 while i <= y:
     i+=1
-    summm*=x
-
-print(summm)
-
-
-# 12. Подсчет простых чисел (While, Break).
-# Напишите программу, которая найдет и напечатает все простые числа в диапазоне от 1 до N,
-# //        где N - положительное целое число, введенное пользователем.
-# Используйте цикл while и конструкцию break для оптимизации процесса.
+    sum11*=x
+print(sum11)
 
 
-n = int(input("Введите число n: "))
+#Task 12. 
+n = int(input("Enter number n: "))
 i = 2
 
 while i <= n:
@@ -159,17 +146,14 @@ while i <= n:
     i += 1
 
 
-# 13. Обратное число (строковые операции). Попросите пользователя ввести номер и напечатать его в обратном порядке.
-number = input("Введите число: ")
+#Task 13. 
+number = input("enter your number for 13th task: ")
 reversed_number = number[::-1]
-print("Число в обратном порядке:", reversed_number)
+print("Reserved number is:", reversed_number)
 
 
 
-# //        14. Проверьте на первичность (продолжайте).
-# //                Напишите программу, которая проверяет, является ли число,
-# //        введенное пользователем, простым числом. Если число не является простым,
-# //                программа должна напечатать следующее простое число и продолжить тестирование. Используйте конструкцию continue.
+#Task 14. 
 def is_prime(num):
     if num <= 1:
         return False
@@ -178,19 +162,17 @@ def is_prime(num):
             return False
     return True
 
-number = int(input("Введите число для проверки на простоту: "))
+number = int(input("enter your number for 14th task: "))
 
 while True:
     if is_prime(number):
-        print(f"{number} - простое число.")
+        print(f"{number} - prime number.")
         break
     else:
-        print(f"{number} не является простым числом.")
+        print(f"{number} is not prime number.")
         number += 1
 
-# //        15. Шифр Цезаря (строковые операции).
-# //        Попросите пользователя ввести строку и сдвинуть все буквы в строке на N позиций вперед по алфавиту (циклически),
-# //                где N - целое число, введенное пользователем. Выведите зашифрованную строку.
+#Task 15. 
 
 def caesar_cipher(text, shift):
     encrypted_text = ""
@@ -208,8 +190,8 @@ def caesar_cipher(text, shift):
 
     return encrypted_text
 
-user_input = input("Введите строку: ")
-shift = int(input("Введите сдвиг (целое число): "))
+user_input = input("Enter string for 15 task: ")
+shift = int(input("Enter shift (solid number): "))
 
 encrypted_text = caesar_cipher(user_input, shift)
-print("Зашифрованная строка:", encrypted_text)
+print("CypherText:", encrypted_text)
